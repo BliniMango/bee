@@ -5,72 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B33> - Coming Soon</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            text-align: center;
-        }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: black;
+        color: #ffd700;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+    }
+    .container {
+        text-align: center;
+        width: 100%;
+        max-width: 500px;
+    }
+    .coming-soon {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .logo-b {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    .logo-33 {
+        color: black;
+        background-color: #ffd700;
+        font-size: 4rem;
+        font-weight: bold;
+        padding: 0 10px;
+        margin: 0 5px;
+    }
+    .logo-arrow {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    .website {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    .email-signup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .email-input {
+        width: 100%;
+        max-width: 300px;
+        padding: 10px;
+        border: none;
+        background-color: #333;
+        color: white;
+        border-radius: 5px;
+    }
+    .email-button {
+        width: 100%;
+        max-width: 300px;
+        padding: 10px;
+        background-color: #ffd700;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    @media (max-width: 480px) {
         .coming-soon {
-            color: #ffd700;
-            font-size: 48px;
-            margin-bottom: 20px;
+            font-size: 2rem;
         }
-        .logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .logo-b {
-            color: #ffd700;
-            font-size: 72px;
-            font-weight: bold;
-        }
-        .logo-33 {
-            color: black;
-            background-color: #ffd700;
-            font-size: 72px;
-            font-weight: bold;
-            padding: 0 10px;
-            margin: 0 5px;
-        }
-        .logo-arrow {
-            color: #ffd700;
-            font-size: 72px;
-            font-weight: bold;
+        .logo-b, .logo-33, .logo-arrow {
+            font-size: 3rem;
         }
         .website {
-            color: #ffd700;
-            font-size: 24px;
-            margin-bottom: 20px;
+            font-size: 1.2rem;
         }
-        .email-signup {
-            display: flex;
-            justify-content: center;
-        }
-        .email-input {
-            padding: 10px;
-            width: 300px;
-            border: none;
-            background-color: #333;
-            color: white;
-        }
-        .email-button {
-            padding: 10px 20px;
-            background-color: #ffd700;
-            color: black;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
     <div class="container">
